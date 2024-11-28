@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tareas y Rutas</title>
+    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="./path.css">
+</head>
+
+<body class="bodyPath">
+    <header>
+        <a href="../home.html">
+            <img src="../../img/logoHeader.png" alt="Home" id="home-button">
+        </a>
+        <div class="bar">
+            <div class="href">
+                <a>Tu ruta</a>
+            </div><br>
+            <div class="xp-bar-container">
+                <div class="xp-bar" id="xp-bar">
+                    <span id="xp-text"></span>
+                </div>
+            </div> 
+        </div> 
+        <h4 id="nombre"></h4>
+        <div id="log">
+            <button onclick="Enviar()" id="log-button">ENTRAR</button>
+        </div>
+    </header>
+    <div class="content">
+        <div class="right-panel">
+            <div class="tasks-panel">
+                <h2>Misiones</h2>
+                <div id="tasks"></div>
+                <div class="secondary-progress-bar"><span id="secondaryProgress"></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="./paht.js"></script>
+</body>
+</html>
