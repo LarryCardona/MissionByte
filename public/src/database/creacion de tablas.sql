@@ -1,9 +1,14 @@
 -- =============================================================================
 -- diagram name: diagrama de tablas
--- created on: 20/11/2024 9:39:59 p. m.
+-- created on: 20/11/2024 9:39:59 p.ï¿½m.
 -- diagram version: 
 -- =============================================================================
+create database missionbyte
 
+with
+	encoding = 'UTF8'
+	template = template0
+;
 drop table if exists usuarios cascade;
 
 create table usuarios (

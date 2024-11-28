@@ -5,7 +5,3 @@ values ('Administrador'),
 insert into cargo (cargo)
 values ('Lider'),
 ('Empleado');
-
-select * from usuarios u 
-select * from organizacion o 
-select * from tareas 
