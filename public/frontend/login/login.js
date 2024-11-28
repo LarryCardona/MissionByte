@@ -85,9 +85,9 @@ function validarLogin() {
       localStorage.setItem("nombreUsuario", data.nombre);
 
       if (correo == "JlC@gmail.com") {
-        window.location.href = "../Lider/lider.html";
+        window.location.href = "../frontend/Lider/lider.html";
       }else{
-        window.location.href = "../empleado/empleado.html";
+        window.location.href = "../frontend/empleado/empleado.html";
       }
 
     })
@@ -151,9 +151,9 @@ function registrar() {
       localStorage.setItem("nombreUsuario", data.nombre);
 
       if (correo == "JlC@gmail.com") {
-        window.location.href = "../Lider/lider.html";
+        window.location.href = "../frontend/Lider/lider.html";
       }else{
-        window.location.href = "../empleado/empleado.html";
+        window.location.href = "../frontend/empleado/empleado.html";
       }
       
     })
