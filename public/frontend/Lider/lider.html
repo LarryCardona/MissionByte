@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Tareas y Rutas</title>
-    <link rel="stylesheet" href="./empleado.css">
+    <link rel="stylesheet" href="lider.css">
 </head>
-
-<body class="bodyPath">
+<body>
     <header>
-        <img src="../img/freepik__retouch__126.png" id="logImg">
+        <img src="../img/freepik__retouch__126.png" id="logImg" alt="Logo MissionByte">
         <h1 id="title">MissionByte</h1>
         <h4 id="nombre"></h4>
         <div id="log">
             <button onclick="Enviar()" id="log-button">ENTRAR</button>
         </div>
     </header>
-    <div class="tasks-panel">
+
+    <div class="tasks-container">
         <h2 id="Misiones">Tareas</h2>
-        <div id="tasks"></div>
+        <div id="tasksContainer"></div>
     </div>
-    <script src="./empleado.js"></script>
+    
+    <!-- Nuevo botón para agregar tareas -->
+    <div class="add-task-container">
+        <button id="addTaskButton" class="add-task-button" onclick="addTask()">Añadir Nueva Tarea</button>
+    </div>
+
+    <script src="./lider.js"></script>
 </body>
 </html>

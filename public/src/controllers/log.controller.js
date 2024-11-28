@@ -71,8 +71,7 @@ export const loginUser = async (req, res) => {
     return res.status(200).json({
       mensaje: "Login exitoso",
       accessToken,
-      nombre: user.nombre,
-      id_rol: user.id_rol, // Enviar el id_rol en la respuesta
+      nombre: user.nombre, // Enviar el id_rol en la respuesta
     });
 
   } catch (err) {

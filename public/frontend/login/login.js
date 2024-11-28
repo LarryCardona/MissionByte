@@ -80,20 +80,16 @@ function validarLogin() {
     })
     .then((data) => {
       mensajeElem.innerText = data.mensaje || "Login exitoso";
-
+      
       localStorage.setItem("authToken", data.accessToken);
       localStorage.setItem("nombreUsuario", data.nombre);
 
-      switch (data.id_rol) {
-        case 1: // Rol administrador
-          window.location.href = "";
-          break;
-        case 2: // Rol empleado
-          window.location.href = "../empleado/empleado.html";
-          break;
-        default:
-          window.location.href = ""; // Redirige a la página principal
+      if (correo == "JlC@gmail.com") {
+        window.location.href = "../Lider/lider.html";
+      }else{
+        window.location.href = "../empleado/empleado.html";
       }
+
     })
     .catch((error) => {
       mensajeElem.innerText = error.message;
@@ -154,16 +150,12 @@ function registrar() {
       localStorage.setItem("authToken", data.token);
       localStorage.setItem("nombreUsuario", data.nombre);
 
-      switch (data.id_rol) {
-        case 1: // Rol administrador
-          window.location.href = "/admin";
-          break;
-        case 2: // Rol empleado
-          window.location.href = "/empleado";
-          break;
-        default:
-          window.location.href = "/"; // Redirige a la página principal
+      if (correo == "JlC@gmail.com") {
+        window.location.href = "../Lider/lider.html";
+      }else{
+        window.location.href = "../empleado/empleado.html";
       }
+      
     })
     .catch((error) => {
       mensajeElem.innerText = error.message;
